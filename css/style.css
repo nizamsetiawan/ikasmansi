@@ -1,0 +1,644 @@
+@keyframes slideDown {
+    from {
+        opacity:0.2;
+        margin-top: -40px;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #001D43;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    margin: 0 auto;
+    display: inline;
+}
+header > nav {
+    position: sticky;
+    top: 0;
+    padding: 10px 70px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    z-index: 1;
+    background-color: #001D43;
+}
+
+.header-logo {
+    flex-grow: 1;
+    margin-top: 15px;
+}
+
+nav > .navigation-header{
+    flex-grow: 3;
+    display: inline-block;
+    text-align: right;
+    background-color: #001D43;
+}
+
+.navigation-header .nav-item{
+    list-style: none;
+    display: inline;
+    margin-right: 30px;
+}
+
+.navigation-header .nav-item:last-child{
+    margin-right: 0px;
+}
+
+.navigation-header .nav-item a{
+    background-color: #001D43;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+.navigation-header .nav-item:last-child a{
+    padding: 6px 15px;
+    border-radius: 5px;
+    background-color:#03C988 ;
+    color: #fff;
+}
+
+.active > a, .navigation-header .nav-item a:hover{
+    color: #03C988;
+    border-bottom: 2px solid #03C988;
+}
+
+.navigation-header .nav-item:last-child a:hover{
+    background-color: #fff;
+    border: 2px solid #03C988;
+    color: #001D43;
+}
+
+.navigation-header-responsive{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    font-size: 35px;
+    color: #212529;
+}
+
+#jumbotron{
+    display: flex;
+    padding: 0px 70px;
+    align-items: center;
+    height: 90vh;
+}
+
+#jumbotron-text,#jumbotron-illustration{
+    flex-grow: 1;
+}
+
+#jumbotron-illustration{
+    padding-left: 50px;    
+}
+
+#jumbotron-text > h1{
+    font-size: 55px;
+    color: #fff;
+}
+
+#jumbotron-text > p{
+    padding-right: 50px;
+    font-size: 18px;
+    font-weight: lighter;
+    color: #fff;
+    line-height: 1.9;
+    margin: 40px 0 30px;
+}
+
+.text-primary{
+    color: #FF9045;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.btn-primary{
+    background-color: #fff;
+    color: #001D43;
+    font-weight: bold;
+    
+}
+.btn-primary:hover{
+    background-color: #03C988;
+    color: #fff;
+    font-weight: bold;
+}
+.btn-outline-primary{
+    background-color: white;
+    border: 3px solid #FF9045;
+    color: #FF9045;
+}
+
+.btn-outline-primary:hover{
+    background-color: #FF9045;
+    color: white;
+}
+#about{
+    height: 100vh;
+    background-color: #F3FFF4;
+    display: flex;
+    align-items: center;
+}
+
+.about-image{
+    flex-basis: 40%;
+    background-image: url('../assets/img/feedika.jpg');
+    background-attachment:fixed;
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 50%;
+    margin-left: 50px;
+}
+
+.about-description{
+    flex-basis: 60%;
+    padding: 30px;
+    color: #03C988;
+}
+
+.about-description > h2,#about > h2, .cerita-siswa-caption > h2{
+    font-size: 45px;
+}
+
+.about-description > p,ul,li{
+    margin: 10px 0px 10px;
+    line-height: 2;
+    text-align: justify;
+    color: #001D43;
+}
+#structure{
+    padding:25px 70px 80px;
+    text-align: center;
+    background-color: #F3FFF4;
+}
+
+#structure > h2{
+    margin-top: -20px;
+}
+
+
+#structure > p{
+    font-size: 22px;
+    color: #001D43;
+    margin-bottom: 50px;
+}
+
+.structure-container{
+    display: flex;
+    flex-wrap:wrap ;
+    align-items: stretch;
+    padding: 10px 0px;
+    margin-bottom: 40px;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.structure-item{
+    box-shadow: 0 4px 4px 4px rgba(0,0,0,0.2);
+    margin: 15px;
+    flex-basis: 25%;
+    border-radius: 5px;
+    transition: margin-top 1s;
+}
+
+.structure-item > a{
+    text-decoration: none;
+    color: #001D43;
+}
+
+.structure-item:hover{
+    margin-top: -40px;
+}
+
+.structure-item > a > img{
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.structure-description{
+    padding: 10px 20px;
+    align-items: center;
+    color: #001D43;
+}
+
+.structure-location{
+    display: flex;
+    flex-direction: column;
+ 
+    margin-top: 8px;
+    margin-bottom: 25px;
+    text-align:left;
+} 
+
+.structure-location > p{
+    margin-left: 10px;
+    color: #001D43;
+    font-size: 14px;
+    font-weight: lighter;
+
+}
+#kontak{
+    display: flex;
+    padding: 25px 70px ;
+    background-color: #001D43;
+}
+
+.kontak-form,.kontak-bio{
+    flex: 3;
+    padding: 10px 20px 0px;
+}
+
+.kontak-bio{
+    flex: 1;
+}
+
+.kontak-form > .card > h3{
+    text-align: center;
+    padding-top: 30px;
+    border-radius: 5px 5px 0px 0px;
+    font-size: 35px;
+}
+
+.kontak-form > .card > h3::after{
+    content: ' ';
+    display: block;
+    width: 60px;
+    height: 5px;
+    margin: auto;
+    margin-top: 15px;
+    background-color: #03C988;
+}
+
+.card{
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 4px rgba(0,0,0,0.2);
+    background-color: #fff;
+    color: #001D43;
+}
+
+.form-group{
+    margin: 30px 40px;
+    color: #001D43;
+}
+
+input,textarea{
+    width: 100%;
+    padding:10px;
+    border-style: none;
+    border: 1px solid #001D43;
+    border-radius: 5px;
+}
+
+label{
+    display: block;
+    margin-bottom:10px;
+    color: #001D43;
+}
+
+input.btn-primary{
+    border-style: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 45px;
+    border: 2px solid #001D43;
+}
+
+input.btn-primary:hover{
+    background-color: white;
+    color: #03C988;
+    border: 2px solid #03C988;
+}
+
+.form-group > p{
+    color: #8f8f8f; 
+    font-size: 14px;
+}
+
+.profile-kontak{
+    object-fit: cover;
+    height: 140px;
+    width: 140px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    box-shadow: 0 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+.kontak-bio{
+    text-align: center;
+}
+
+.kontak-bio > .card{
+    padding:10px 25px;
+    position: relative;
+}
+
+.kontak-bio > .card::after{
+    content: ' ';
+    display: block;
+    height: 130px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px 5px 0 0;
+    background-color: #FF9045;
+}
+
+.text-muted{
+    color: #8f8f8f;
+    font-size: 12px;
+    margin-top: 8px;
+    margin-bottom: 30px;
+}
+
+.table-responsive{
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    color: #001D43;
+}
+
+.kontak-bio > table{
+    border-spacing: 0px;
+    width: auto;
+    border: 2px solid #f7f7f7;
+    margin-bottom: 55px;
+}
+
+tr,th,td{
+    text-align: left;
+    padding: 10px;
+}
+
+tr:nth-child(even){
+    background-color: #f7f7f7;
+}
+
+tr:nth-child(odd){
+    background-color: #f7f7f7;
+}
+#footer{
+    padding: 30px 70px 0px;
+    background-color: #F3FFF4;
+}
+
+.footer-content{
+    display: flex;
+}
+
+.footer-logo,.footer-kontak,.footer-menu{
+    flex: 1;
+    
+}
+
+.footer-menu{
+    padding-left: 150px;
+}
+
+.footer-menu h4,.footer-kontak h4{
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #03C988;
+}
+
+.footer-kontak p{
+    margin-bottom: 10px;
+    color: #001D43;
+}
+
+.footer-menu li{
+    list-style: none;
+    margin: 0px 0px 20px;
+}
+
+.footer-menu li > a{
+    text-decoration: none;
+    color: #001D43;
+}
+
+.footer-logo > p{
+    margin-top: 25px;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    color: #001D43;
+}
+
+.footer-copyright{
+    padding: 20px 0px 40px;;
+    margin-top: 50px;
+    font-size: 14px;
+    font-weight: lighter;
+    text-align: center;
+    color: #001D43;
+}
+
+@media (max-width:1100px){
+    .navigation-header{
+        padding: 10px 70px;
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        flex-grow: 0;
+        width: 100%;
+        box-shadow: 0 4px 4px 2px rgba(0,0,0,0.2);
+        border-top: 1px solid #bebebe;
+        opacity: 0;
+    }
+
+    .slide-down{
+        opacity: 1 !important;
+        animation: slideDown 0.5s;
+    }
+
+    .navigation-header .nav-item{
+        list-style: none;
+        display: block;
+        padding: 10px;
+        text-align: left;
+    }
+    
+    .navigation-header .nav-item:last-child a{
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .active > a,.navigation-header .nav-item a:hover{
+        color: #03C988;
+        border-bottom: none;
+    }
+
+    .navigation-header-responsive{
+        display: inline-block;
+    }
+
+    #jumbotron{
+        padding-bottom: 10px;
+    }
+
+    #jumbotron-text > h1{
+        font-size: 35px;
+    }
+
+    #jumbotron-illustration > img{
+        width: 300px;
+    }
+
+    #about-kami{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image{
+        width: 100%;
+        height: 500px;
+    }
+
+    #structure{
+        padding-bottom:70px !important;
+        text-align: center;
+    }
+
+    .structure-container{
+        flex-direction: column;
+    }
+
+    .structure-item{
+        transition: none;
+    }
+
+    .structure-item:hover{
+        margin-top: 15px !important;
+    }
+
+
+    #kontak{
+        flex-direction: column;
+        padding: 25px 10px;
+    }
+
+    .footer-content{
+        text-align: left;
+        flex-direction: column;
+    }
+
+    .footer-menu{
+        margin: 40px 0px;
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .navigation-header{
+        padding: 5px;
+    }
+
+    header > nav {
+        padding: 5px;   
+    }
+
+    #jumbotron{
+        flex-direction: column-reverse;
+        margin-top: 60px;
+        padding: 0px 25px 25px;
+        text-align: center;
+    }
+
+    #jumbotron-text > h1{
+        font-size: 35px;
+    }
+
+    #jumbotron-text > p{
+        text-align: justify;
+        font-size: 16px;
+        margin-top:25px;
+        padding-right: 0px;
+    }
+
+    #jumbotron-illustration > img{
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+    .structure-item{
+        flex-basis: 60%;
+    }
+
+    .kontak-bio{
+        margin-bottom: 40px;
+    }
+
+    .table-responsive{
+        overflow: scroll;
+    }
+}
+
+@media screen and (max-width:500px){
+    .navigation-header{
+        padding: 10px 20px;
+    }
+
+    #jumbotron{
+        margin-top: 10px;
+    }
+
+    #about-kami{
+        height: auto;
+    }
+
+    .about-image{
+        display: none;
+    }
+
+    #structure{
+        padding:15px 10px;
+    }
+
+    .structure-item{
+        flex-basis: 60%;
+    }
+
+
+    .table-responsive{
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width:375px){
+    #jumbotron{
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width:350px){
+    #jumbotron{
+        margin-top: 220px;
+    }
+}
