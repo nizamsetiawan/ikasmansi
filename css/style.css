@@ -88,7 +88,7 @@ nav > .navigation-header{
     border-radius: 5px;
     display: none;
     font-size: 35px;
-    color: #212529;
+    color: #fff;
 }
 
 #jumbotron{
@@ -174,7 +174,7 @@ nav > .navigation-header{
     color: #03C988;
 }
 
-.about-description > h2,#about > h2, .cerita-siswa-caption > h2{
+.about-description > h2,#about > h2{
     font-size: 45px;
 }
 
@@ -191,7 +191,7 @@ nav > .navigation-header{
 }
 
 #structure > h2{
-    margin-top: -20px;
+    margin-top: 20px;
 }
 
 
@@ -352,6 +352,7 @@ input.btn-primary:hover{
 .kontak-bio > .card{
     padding:10px 25px;
     position: relative;
+
 }
 
 .kontak-bio > .card::after{
@@ -364,7 +365,7 @@ input.btn-primary:hover{
     left: 0;
     z-index: -1;
     border-radius: 5px 5px 0 0;
-    background-color: #FF9045;
+    background-color: #001D43;
 }
 
 .text-muted{
@@ -505,11 +506,11 @@ tr:nth-child(odd){
         font-size: 35px;
     }
 
-    #jumbotron-illustration > img{
+    #jumbotron-herobanner > img{
         width: 300px;
     }
 
-    #about-kami{
+    #about{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -536,7 +537,6 @@ tr:nth-child(odd){
     .structure-item:hover{
         margin-top: 15px !important;
     }
-
 
     #kontak{
         flex-direction: column;
@@ -581,7 +581,7 @@ tr:nth-child(odd){
         padding-right: 0px;
     }
 
-    #jumbotron-illustration > img{
+    #jumbotron-herobanner > img{
         width: 200px;
         margin-bottom: 20px;
     }
@@ -608,7 +608,7 @@ tr:nth-child(odd){
         margin-top: 10px;
     }
 
-    #about-kami{
+    #about{
         height: auto;
     }
 
@@ -629,6 +629,7 @@ tr:nth-child(odd){
         width: 90%;
     }
 
+    
 }
 
 @media screen and (max-width:375px){
